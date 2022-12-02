@@ -1,0 +1,14 @@
+
+
+
+<app-add-item (inputValueMethodEvent)="inputValueMethod($event)" (errorEvent)="receiveErrorMessage($event)" ></app-add-item>
+
+<!-- <p>{{itemList}}</p> -->
+
+<app-error-validation [errorDesc]="errorValue"></app-error-validation>
+
+<app-item-list [itemListArray]="itemList" ></app-item-list>
+
+
+
+

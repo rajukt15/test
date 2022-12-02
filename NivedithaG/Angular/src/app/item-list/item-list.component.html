@@ -1,0 +1,24 @@
+
+<div class="item-list-container" *ngIf="itemListArray.length != 0">
+  <h3>Item List :</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Item List No</th>
+        <th>Items List</th>
+        <th>Delete item</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr
+        *ngFor="let element of itemListArray; let indexnum = index"
+        [ngStyle]="{ 'background-color': indexnum % 2 == 0 ? 'white' : 'yellow' }"
+      >
+        <td>{{ indexnum + 1 }}</td>
+        <td>{{ element }}</td>
+        <td><button class="dlt-btn" (click)="handleDelete(indexnum)">Delete Item</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
