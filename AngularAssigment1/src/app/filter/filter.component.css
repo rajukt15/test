@@ -1,0 +1,13 @@
+.filter-container {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+span {
+  font-size: large;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+}

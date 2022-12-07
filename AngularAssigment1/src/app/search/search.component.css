@@ -1,0 +1,17 @@
+.search-container {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+span {
+  font-size: larger;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 240px;
+  height: 30px;
+  margin-left: 10px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
