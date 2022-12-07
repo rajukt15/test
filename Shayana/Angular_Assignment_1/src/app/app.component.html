@@ -1,0 +1,8 @@
+<app-add-user
+  (AddUser)="AddUserData($event)"
+  [totalcount]="TotalCount"
+  [activecount]="ActiveCount"
+  [inactivecount]="InActiveCount"
+></app-add-user>
+
+<app-user-list [userdata]="userList"></app-user-list>

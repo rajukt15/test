@@ -1,0 +1,33 @@
+<div class="container mt-5 bg-light">
+  <div class="table">
+    <div *ngIf="userdata.length != 0">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>User Name</th>
+            <th>Status</th>
+            <th>Delete user</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr
+            *ngFor="let i of userdata; index as delete"
+            [ngStyle]="{
+              'background-color':
+                delete % 2 == 0 ? 'rgb(162, 231, 218)' : 'white'
+            }"
+          >
+            <td>{{ i.userInput }}</td>
+            <td>{{ i.selectValue }}</td>
+            <td>
+              <button (click)="ondelete(delete)" class="btn btn-danger">
+                Remove user
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
