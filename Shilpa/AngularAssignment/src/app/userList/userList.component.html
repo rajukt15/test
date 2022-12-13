@@ -1,0 +1,22 @@
+<div *ngIf="userData.length != 0">
+  <h1 class="p-3 mb-2 bg-secondary text-white">List of people added</h1>
+
+  <div class="table-responsive-sm">
+    <table class="table alifn-middle table-sm" [ngClass]="table">
+      <thead class="table-dark">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <tr
+        *ngFor="let details of existingUserData"
+        [ngClass]="details.age >= 18 ? 'apply-gainsboro' : 'apply-white'"
+      >
+        <td>{{ details.name }}</td>
+        <td>{{ details.age }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

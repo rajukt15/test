@@ -1,0 +1,29 @@
+<div class="input">
+  <h3 class="head">Enter Details</h3>
+
+  <input
+    #inputName
+    type="text"
+    class="form-control-lg"
+    placeholder="Enter Name"
+    required="true"
+  />
+
+  <input
+    #inputAge
+    name="ageInput"
+    type="number"
+    class="form-control-lg"
+    placeholder="Enter Age"
+    required="true"
+  />
+  <br /><br />
+  <button
+    type="submit"
+    (click)="onClick(inputName.value, inputAge.value)"
+    class="btn btn-success btn-lg"
+  >
+    Add
+  </button>
+  <app-userList [userData]="newUserInput"></app-userList>
+</div>
