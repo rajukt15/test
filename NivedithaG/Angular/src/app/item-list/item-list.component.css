@@ -1,0 +1,40 @@
+.item-list-container{
+    margin-left: 90px;
+}
+
+table,tr{
+    margin-left: 20px;
+    margin-top: 20px;
+    border:1px solid white;
+    background-color: rgb(125, 197, 125);
+    
+    }
+    th{
+        border:1px solid white;
+        text-align: center;
+        padding:10px;
+        color:white;
+    }
+    td{
+        border:1px solid white;
+        text-align: center;
+        padding:10px;
+        
+    }
+
+    h3{
+        margin-left: 20px;
+        margin-top: 20px;
+        color:rgb(125, 197, 125);
+        font-size: 30px;
+    }
+    .dlt-btn{
+        padding:5px;
+        border-radius: 3px;
+        border:none;
+    }
+    
+    .dlt-btn:hover{
+        background-color: black;
+        color:white;
+    }
