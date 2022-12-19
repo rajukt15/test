@@ -13,10 +13,9 @@
         <tbody>
           <tr
             *ngFor="let i of userdata; index as delete"
-            [ngStyle]="{
-              'background-color':
-                delete % 2 == 0 ? 'rgb(162, 231, 218)' : 'white'
-            }"
+           
+            [ngClass]="delete % 2 == 0 ? 'class-blue' : 'class-white'"
+            "
           >
             <td>{{ i.userInput }}</td>
             <td>{{ i.selectValue }}</td>

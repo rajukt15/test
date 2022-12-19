@@ -15,9 +15,12 @@ export class AddUserComponent {
   @Input() activecount: number = 0;
   @Input() inactivecount: number = 0;
 
-  @Output() AddUser = new EventEmitter<{ userInput: any; selectValue: any }>();
+  @Output() AddUser = new EventEmitter<{
+    userInput: string;
+    selectValue: string;
+  }>();
 
-  onClick(userInput: any, selectValue: any) {
+  onClick(userInput: string, selectValue: string) {
     if (!userInput) {
       alert('User Name Is Required');
     } else {
