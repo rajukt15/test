@@ -1,0 +1,41 @@
+<div class="container mt-5 bg-light">
+  <h2>Add Details</h2>
+
+  <div class="row">
+    <div class="col-md-5 form-group">
+      <label class="">Enter Name</label>
+      <input
+        type="text"
+        required
+        #userInput
+        [placeholder]="UserName"
+        class="form-control"
+      />
+    </div>
+    <div class="col-md-5 form-group">
+      <div>
+        <label>Select Status</label>
+        <select #selectValue class="form-control">
+          <option *ngFor="let option of dropdown">
+            {{ option }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-2 form-group">
+      <button
+        (click)="onClick(userInput.value, selectValue.value)"
+        class="btn btn-success"
+      >
+        Create User Name</button
+      ><br />
+    </div>
+    <div>
+      Total count : <strong>{{ totalcount }}</strong>
+      <br />
+      Active count : <strong>{{ activecount }}</strong>
+      <br />
+      InActive :<strong>{{ inactivecount }}</strong>
+    </div>
+  </div>
+</div>
