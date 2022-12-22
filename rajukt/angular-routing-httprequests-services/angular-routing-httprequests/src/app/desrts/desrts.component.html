@@ -1,5 +1,4 @@
-<div class="row" *ngIf="loading">Loading...</div>
-
+<div class="spinner-border" *ngIf="loading" role="status"></div>
 <div class="row" *ngIf="!loading">
   <ul class="list-group">
     <span *ngIf="desertsList.length == 0"> No Items found.Please add some</span>
